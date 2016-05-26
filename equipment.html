@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>L.M. Guitars: Equipment</title>
+<link rel="icon" href="img/page/guitaricon.png">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/grid_6.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/forms.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+</head>
+
+<body onload="loadCart()">
+    
+    
+<header>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="one-fourth">
+                <img class="hide-mobile" src="img/page/shredlogo2.jpg">
+            </div>
+            <div class="one-half">
+                <h1>Lake Michigan Guitars</h1>
+            </div>
+            <div class="one-fourth">
+                <!-- begin cart link widget -->
+                <div class="widget hide-mobile" id="cart_links">
+                    <a href="cart.html"><img class="cart_icon" src="img/page/carticon2.png" alt="cart icon" /></a>
+                    <span class="cart_link"><a id="cart_link" href="cart.html">Shopping Cart</a></span> <br />
+                    <span class="item_count">Items (<span id="item_count">0</span>)</span>
+                    <span class="checkout_link"><a id="checkout_link" href="checkout.html">Checkout</a></span>
+                </div>
+                <!-- end widget -->
+            </div>
+        </div>
+        
+        <div class="row hide-desktop">
+                <div class="full">
+                    <a class="tt upper-left" href="cart.html">Shopping Cart</a>
+                    <a class="tt upper-right" href="checkout.html">Checkout</a>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="full">
+                <nav class="navbar hide-mobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="guitars.html">Guitars</a></li>
+                        <li class="current"><a href="equipment.html">Equipment</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="row hide-desktop">
+            <div class="full">
+                <nav class="navbar phone">
+                    <ul>
+                        <li class="phone"><a href="index.html">Home</a></li>
+                        <li class="phone"><a href="guitars.html">Guitars</a></li>
+                    </ul> 
+                    <ul>
+                        <li class="current phone"><a href="equipment.html">Equipment</a></li>
+                        <li class="phone"><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </div>
+    
+</header>
+
+
+<div class="container">
+    
+    <section>
+        
+        <div class="row">
+            <div class="full">
+                <h2>Accessories</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-sixth">
+                <img class="as" src="img/page/amp1.jpg">
+            </div>
+            <div class="five-sixths">
+                <h3>Basic Electric Guitar Amp: $250</h3>
+                <p>This amp offers a basic option for those guitar players who want a variety of options for tone and sound. Offers four different sound types, along with equalization in bass, mid, and treble.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('amp1')">
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-sixth">
+                <img class="as" src="img/page/cliptuner.jpg">
+            </div>
+            <div class="five-sixths">
+                <h3>Clip-on Electronic Chromatic Tuner: $14.99</h3>
+                <p>A small and dependable tuner that can be used on almost every stringed instrument, tunes chromatically and has options for different tuning pitches. Comes with replacement batteries. </p>
+                <input type="button" value="Add to Cart" onclick="addToCart('cliptuner')">
+            </div>
+        </div><div class="row">
+            <div class="one-sixth">
+                <img class="as" src="img/page/quarterinch.jpg">
+            </div>
+            <div class="five-sixths">
+                <h3>10ft Quarter Inch Electric Guitar Table: $6.99</h3>
+                <p>A standard cable for connecting electric guitars and pedals or amps, this cable offers a medium-range area of playing around your amp or pedalboard.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('quarterinch')">
+            </div>
+        </div><div class="row">
+            <div class="one-sixth">
+                <img class="as" src="img/page/pedal.jpg">
+            </div>
+            <div class="five-sixths">
+                <h3>Distortion/Overdrive Pedal: $49.99</h3>
+                <p>A general pedal used to make your tone sound heavier while playing or to clean up your high-pitched solos.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('pedal')">
+            </div>
+        </div><div class="row">
+            <div class="one-sixth">
+                <img class="as" src="img/page/pedalboard.jpg">
+            </div>
+            <div class="five-sixths">
+                <h3>Plastic Pedalboard Frame: $36.95</h3>
+                <p>A small frame used to put various pedals of different sizes in to create one single pedalboard. Comes with shortened quarter-inch cables and a built-in power strip to connect all of your pedals.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('pedalboard')">
+            </div>
+        </div>
+        
+    </section>
+    
+    </div>
+    
+<footer>
+    <div class="container">
+        
+        <div class="row">
+            <div class="full">
+                <p>&copy 2016 Dylan S.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="one-fourth">
+                <h4>Social Media</h4>
+                    <a href="www.instagram.com"><img src="img/footer/instagram.jpg" alt="Instagram"></a>
+                    <a href="www.facebook.com"><img src="img/footer/facebook.jpg" alt="Facebook"></a>
+                    <a href="www.twitter.com"><img src="img/footer/twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="one-fourth">
+                <h4>Guitar Brands</h4>
+                <ul>
+                    <li><a href="http://shop.fender.com/en-US/electric-guitars/">Fender</a></li>
+                    <li><a href="http://www.gretschguitars.com/">Gretsch</a></li>
+                    <li><a href="http://www.gibson.com/">Gibson</a></li>
+                    <li><a href="http://www.epiphone.com/">Epiphone</a></li>
+                </ul>
+            </div>
+            <div class="one-half">
+                <h4>Other Brands</h4>
+                <ul>
+                    <li><a href="http://www.jimdunlop.com/products/guitar-picks">Dunlop</a></li>
+                    <li><a href="http://line6.com/">Line 6</a></li>
+                    <li><a href="http://www.kysermusical.com/">Kyser</a></li>
+                    <li><a href="https://www.ernieball.com/">Ernie Ball</a></li>
+                    
+                </ul>
+            </div>
+             
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+    
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/cart.js"></script>
+
+<script>
+$('#my-carousel').owlCarousel({
+    autoplay: true,
+    autoplayHoverpause: true,
+    autoplayTimeout: 4000,
+    dots: true,
+    nav: false,
+    items: 1,
+    loop: true,
+    margin: 10,
+})
+</script>
+
+
+
+</body>
+</html>

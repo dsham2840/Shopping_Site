@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>L.M. Guitars: Checkout</title>
+<link rel="icon" href="img/page/guitaricon.png">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/grid_6.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/forms.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+</head>
+
+<body onload="loadCart()">
+    
+    
+<header>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="one-fourth">
+                <img class="hide-mobile" src="img/page/shredlogo2.jpg">
+            </div>
+            <div class="one-half">
+                <h1>Lake Michigan Guitars</h1>
+            </div>
+            <div class="one-fourth">
+                <!-- begin cart link widget -->
+                <div class="widget hide-mobile" id="cart_links">
+                    <a href="cart.html"><img class="cart_icon" src="img/page/carticon2.png" alt="cart icon" /></a>
+                    <span class="cart_link"><a id="cart_link" href="cart.html">Shopping Cart</a></span> <br />
+                    <span class="item_count">Items (<span id="item_count">0</span>)</span>
+                    <span class="checkout_link"><a id="checkout_link" href="checkout.html">Checkout</a></span>
+                </div>
+                <!-- end widget -->
+            </div>
+        </div>
+        
+        <div class="row hide-desktop">
+                <div class="full">
+                    <a class="tt upper-left" href="cart.html">Shopping Cart</a>
+                    <a class="tt upper-right" href="checkout.html">Checkout</a>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="full">
+                <nav class="navbar hide-mobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="guitars.html">Guitars</a></li>
+                        <li><a href="equipment.html">Equipment</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="row hide-desktop">
+            <div class="full">
+                <nav class="navbar phone">
+                    <ul>
+                        <li class="phone"><a href="index.html">Home</a></li>
+                        <li class="phone"><a href="guitars.html">Guitars</a></li>
+                    </ul> 
+                    <ul>
+                        <li class="phone"><a href="equipment.html">Equipment</a></li>
+                        <li class="phone"><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </div>
+    
+</header>
+
+<section>
+    <div class="container">
+        
+        <div class="row">
+            <div class="full">
+               
+                  <form action="thanks.html" class="pure-form pure-form-aligned" method="post">
+    
+    <fieldset>
+        <legend>Shipping Info </legend><br>
+        <div class="pure-control-group">
+            <label for="name">First Name</label>
+            <input id="name" pattern="[a-zA-Z0-9]+" type="text" placeholder="First" name="name" required>
+            
+            <label for="name1">Last Name</label>
+            <input id="name1" type="text" placeholder="Last" name="name1" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="address">Address</label>
+            <input id="address" type="text" placeholder="123 Example Road" name="address" required>
+            
+            <label for="state">State</label>
+            <input id="state" pattern="[a-zA-Z]{2}" placeholder="ST" type="text" name="state" size="2" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="city">City</label>
+            <input id="city" placeholder="City/Town" type="text" name="city" required>
+            
+            <label for="zip">Zip Code</label>
+            <input id="zip" placeholder="12345" pattern="(\d{5}([\-]\d{4})?)" type="text" name="zip" size="5" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="email">Email</label>
+            <input id="email" placeholder="abc123@example.com" type="email" name="email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-555-5555" name="phone" size="11" required>
+        </div>
+
+        
+    </fieldset>
+        
+    <fieldset>
+            
+            <legend>Billing Info</legend> 
+            
+            <div class="pure-control-group">
+                
+                
+                    <label for="card">Credit Card</label>
+                    <select class="pure-input-3-16" id="card" required>
+                        <option value="select"></option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="americanexpress">American Express</option>
+                        <option value="discover">Discover</option>
+                    </select>
+                    
+                <label for="validate">CVN</label>
+                <input id="validate" placeholder="123"  pattern="[0-9]{3}" type="text" size="5" name="validate" required>
+                
+
+
+            </div>
+            
+            <div class="pure-control-group">
+                
+                    <label for="number">Credit Card Number</label>
+                    <input class="pure-input-3-16" id="number" pattern="[0-9]{16}" placeholder="0123456789109999" size="14" type="text" name="cardnumber" required>
+
+                
+                <label for="exp">Expiration Date</label>
+                <input id="exp" pattern="(0[1-9]|1[012])[- /.](1[7-9]|2[0-9])" type="text" placeholder="06/17" name="exp" size="5" required>
+            </div>
+                
+                   
+    </fieldset>
+    
+    <div class="pure-control-group">
+        <button type="submit" class="pure-button pure-button-primary">Place Order</button>
+    </div>
+        
+    </form>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<footer>
+    <div class="container">
+        
+        <div class="row">
+            <div class="full">
+                <p>&copy 2016 Dylan S.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="one-fourth">
+                <h4>Social Media</h4>
+                    <a href="www.instagram.com"><img src="img/footer/instagram.jpg" alt="Instagram"></a>
+                    <a href="www.facebook.com"><img src="img/footer/facebook.jpg" alt="Facebook"></a>
+                    <a href="www.twitter.com"><img src="img/footer/twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="one-fourth">
+                <h4>Guitar Brands</h4>
+                <ul>
+                    <li><a href="http://shop.fender.com/en-US/electric-guitars/">Fender</a></li>
+                    <li><a href="http://www.gretschguitars.com/">Gretsch</a></li>
+                    <li><a href="http://www.gibson.com/">Gibson</a></li>
+                    <li><a href="http://www.epiphone.com/">Epiphone</a></li>
+                </ul>
+            </div>
+            <div class="one-half">
+                <h4>Other Brands</h4>
+                <ul>
+                    <li><a href="http://www.jimdunlop.com/products/guitar-picks">Dunlop</a></li>
+                    <li><a href="http://line6.com/">Line 6</a></li>
+                    <li><a href="http://www.kysermusical.com/">Kyser</a></li>
+                    <li><a href="https://www.ernieball.com/">Ernie Ball</a></li>
+                    
+                </ul>
+            </div>
+             
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+    
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/cart.js"></script>
+
+<script>
+$('#my-carousel').owlCarousel({
+    autoplay: true,
+    autoplayHoverpause: true,
+    autoplayTimeout: 4000,
+    dots: true,
+    nav: false,
+    items: 1,
+    loop: true,
+    margin: 10,
+})
+</script>
+
+
+
+</body>
+</htm

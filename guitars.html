@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>L.M. Guitars: Guitars</title>
+<link rel="icon" href="img/page/guitaricon.png">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/grid_6.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/forms.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+</head>
+
+<body onload="loadCart()">
+    
+    
+<header>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="one-fourth">
+                <img class="hide-mobile" src="img/page/shredlogo2.jpg">
+            </div>
+            <div class="one-half">
+                <h1>Lake Michigan Guitars</h1>
+            </div>
+            <div class="one-fourth">
+                <!-- begin cart link widget -->
+                <div class="widget hide-mobile" id="cart_links">
+                    <a href="cart.html"><img class="cart_icon" src="img/page/carticon2.png" alt="cart icon" /></a>
+                    <span class="cart_link"><a id="cart_link" href="cart.html">Shopping Cart</a></span> <br />
+                    <span class="item_count">Items (<span id="item_count">0</span>)</span>
+                    <span class="checkout_link"><a id="checkout_link" href="checkout.html">Checkout</a></span>
+                </div>
+                <!-- end widget -->
+            </div>
+        </div>
+        <div class="row hide-desktop">
+                <div class="full">
+                    <a class="tt upper-left" href="cart.html">Shopping Cart</a>
+                    <a class="tt upper-right" href="checkout.html">Checkout</a>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="full">
+                <nav class="navbar hide-mobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="guitars.html">Guitars</a></li>
+                        <li><a href="equipment.html">Equipment</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="row hide-desktop">
+            <div class="full">
+                <nav class="navbar phone">
+                    <ul>
+                        <li class="phone"><a href="index.html">Home</a></li>
+                        <li class="current phone"><a href="guitars.html">Guitars</a></li>
+                    </ul> 
+                    <ul>
+                        <li class="phone"><a href="equipment.html">Equipment</a></li>
+                        <li class="phone"><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </div>
+    
+</header>
+
+
+<div class="container">
+    
+    <section>
+        
+        <div class="row">
+            <div class="full">
+                <h2>Guitars- 10% Discount <span class="hide-mobile"> this Week Only! </span> </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-third">
+                <img src="img/page/gretsch-g542T.jpg">
+            </div>
+            <div class="two-thirds">
+                <h3>Gretsch-G542T: $495.85 (instead of $550.95)</h3>
+                <p>A solid, all-around well playing hollow-bodied electric guitar. It includes 4 different tone knobs and a whammy bar already installed.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('gretsch')">
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-third">
+                <img src="img/page/splitv.jpg">
+            </div>
+            <div class="two-thirds">
+                <h3>Black Split-V: $1259.95 (instead of $1399.95)</h3>
+                <p>An iconic rock and metal guitar, this Flying-V guitar will be sure to give you a hardcore experience wherever you may play it.  </p>
+                <input type="button" value="Add to Cart" onclick="addToCart('splitv')">
+            </div>
+        </div><div class="row">
+            <div class="one-third">
+                <img src="img/page/strat.jpg">
+            </div>
+            <div class="two-thirds">
+                <h3>Fender Stratocaster: $359.55 (instead of $399.50)</h3>
+                <p>This basic guitar offers a good starting place for the new player who is seeking to find their preffered brand.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('picks')">
+            </div>
+        </div><div class="row">
+            <div class="one-third">
+                <img src="img/page/vintagegibson.jpg">
+            </div>
+            <div class="two-thirds">
+                <h3>1962 Gibson ES335 Hollow Body: $14400 (instead of $16,000)</h3>
+                <p>This classic rocker guitar will make a wonderful addition to anyones collection of electric guitars.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('vintagegibson')">
+            </div>
+        </div><div class="row">
+            <div class="one-third">
+                <img src="img/page/vintagestrat.jpg">
+            </div>
+            <div class="two-thirds">
+                <h3>1957 Vintage Fender Stratocaster: $24299.99 (instead of $26,999.99)</h3>
+                <p>The prize item of our collection, this gem offers a classic view to mid-century genres and styles used during that time.</p>
+                <input type="button" value="Add to Cart" onclick="addToCart('vintagestrat')">
+            </div>
+        </div>
+        
+    </section>
+    
+    </div>
+    
+<footer>
+    <div class="container">
+        
+        <div class="row">
+            <div class="full">
+                <p>&copy 2016 Dylan S.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="one-fourth">
+                <h4>Social Media</h4>
+                    <a href="www.instagram.com"><img src="img/footer/instagram.jpg" alt="Instagram"></a>
+                    <a href="www.facebook.com"><img src="img/footer/facebook.jpg" alt="Facebook"></a>
+                    <a href="www.twitter.com"><img src="img/footer/twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="one-fourth">
+                <h4>Guitar Brands</h4>
+                <ul>
+                    <li><a href="http://shop.fender.com/en-US/electric-guitars/">Fender</a></li>
+                    <li><a href="http://www.gretschguitars.com/">Gretsch</a></li>
+                    <li><a href="http://www.gibson.com/">Gibson</a></li>
+                    <li><a href="http://www.epiphone.com/">Epiphone</a></li>
+                </ul>
+            </div>
+            <div class="one-half">
+                <h4>Other Brands</h4>
+                <ul>
+                    <li><a href="http://www.jimdunlop.com/products/guitar-picks">Dunlop</a></li>
+                    <li><a href="http://line6.com/">Line 6</a></li>
+                    <li><a href="http://www.kysermusical.com/">Kyser</a></li>
+                    <li><a href="https://www.ernieball.com/">Ernie Ball</a></li>
+                    
+                </ul>
+            </div>
+             
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+    
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/cart.js"></script>
+
+<script>
+$('#my-carousel').owlCarousel({
+    autoplay: true,
+    autoplayHoverpause: true,
+    autoplayTimeout: 4000,
+    dots: true,
+    nav: false,
+    items: 1,
+    loop: true,
+    margin: 10,
+})
+</script>
+
+
+
+</body>
+</html>

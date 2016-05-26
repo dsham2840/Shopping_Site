@@ -1,0 +1,233 @@
+/*** sectioning elements ***/
+
+body {
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-family: 'Arimo', sans-serif;
+}
+
+header {
+    background-color: #3399CC;
+}
+
+main {
+    /* I wouldn't recommend applying any styles to this
+       section as the 'main' element is not supported
+       in all browsers yet. */
+}
+
+footer {
+    background-color: #3399CC;
+}
+
+nav {
+
+}
+
+section {
+    background-color: #FFFFFF;
+}
+
+aside {
+
+}
+
+
+/**** base styles ***/
+
+h1 {
+    margin: 40px 0 0 0;
+    padding: 0;
+    font-size:50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    
+
+}
+
+h4 {
+
+}
+
+h5 {
+    font-size: 24px;
+    margin: 0;
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+blockquote {
+
+}
+
+ol {
+
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+
+/*** image styles ***/
+
+img  {
+	max-width: 100%;
+}
+
+iframe {
+    
+    max-width:100%;
+}
+
+/*** link styles ***/
+
+a:link {
+    color: #333399;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #333399;
+}
+
+a:active {
+    color: #333399;
+}
+
+
+
+nav{
+    
+}
+
+nav li {
+    width: 25%;
+    background-color: #3333FF;
+}
+nav a {
+    color: #000000;
+}
+
+footer ul, footer li, footer p, h4 , footer a, header h1 {
+    color: #000000;
+}
+
+li.current {
+    background-color: #333399;
+    border: 2px solid #FFFFFF;
+}
+
+button.pure-button {
+    font-size: 16px;
+}
+
+footer a {
+
+    margin: 0;
+    padding:0;
+}
+span {
+    color: #000000;
+}
+
+span.item_count {
+    color: #000000;
+}
+
+span.cart_link {
+    color: #000000;
+}
+
+span a {
+    color: #000000;
+}
+    
+footer p {
+    font-size: 20px;
+    margin: 0;
+}
+
+select {
+    font-size: 18px;
+}
+/*** form styles (coming soon) ***/
+
+input {
+    padding: 3px;
+    margin: 3px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+        margin: 0;
+    }
+
+    li.phone {
+        width: 50%;
+        border: 1px #777777 solid;
+    }
+    
+    div.widget {
+            
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body, input {
+        font-size: 16px;
+    }
+    
+    img.as {
+        width: 50%;
+    }
+    
+    a.tt {
+        font-size: 20px;
+    }
+    
+
+}
+
